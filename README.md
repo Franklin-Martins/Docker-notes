@@ -14,7 +14,7 @@
  ### Then, with the ip you can manage the database inside of container with:
    `sudo docker exec -it <container name or container id> /bin/bash`
    #### after:
-   `mysql -h 172.21.0.2 -P 3306 -u root -p`
+   `mysql -h 172.21.0.1 -P 3306 -u root -p`
 
 ### In case you want import an .sql to your database:
   `sudo docker exec -i <container name> sh -c 'exec mysql -uroot -p"$MYSQL_ROOT_PASSWORD"' < ~/PATH_TO_FILE/<filename>.sql`
